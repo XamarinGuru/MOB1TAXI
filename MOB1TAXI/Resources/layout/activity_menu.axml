@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:id="@+id/FlyOutMenu"
+    android:background="@color/login_background">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/menu_top_bg">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="100dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@mipmap/avatar"
+                android:id="@+id/avatar_img" />
+            <TextView
+                android:id="@+id/name_txt"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:singleLine="true"
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:text="Goerge Donovan" />
+            <TextView
+                android:id="@+id/phonenumber_txt"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:singleLine="true"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:text="+01 324 453 234" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/setting_but"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/setting_but" />
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/menu_form"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:verticalScrollbarPosition="right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/home_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/menu_home_icon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/abc_text_size_medium_material"
+                    android:text="@string/home" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/booking_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/menu_booking_icon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/abc_text_size_medium_material"
+                    android:text="@string/bookings" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/payment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/menu_payment_icon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/abc_text_size_medium_material"
+                    android:text="@string/payments" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/contactus_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/menu_contactus_icon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/abc_text_size_medium_material"
+                    android:text="@string/contact_us" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="40dp"
+                android:id="@+id/aboutus_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/material_grey_300"
+                    android:layout_marginLeft="40dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/abc_text_size_subtitle_material_toolbar"
+                    android:text="@string/about_us" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/policy_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/material_grey_300"
+                    android:layout_marginLeft="40dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/abc_text_size_subtitle_material_toolbar"
+                    android:text="@string/privacy_policy" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:id="@+id/logout_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/material_grey_300"
+                    android:layout_marginLeft="40dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/abc_text_size_subtitle_material_toolbar"
+                    android:text="@string/logout" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

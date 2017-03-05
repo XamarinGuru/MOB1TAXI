@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <RelativeLayout
+        android:id="@+id/menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/back_but"
+            android:id="@+id/back_but" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/back_but"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/abc_text_size_title_material"
+            android:text="@string/book_ride" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="155dp"
+            class="com.google.android.gms.maps.SupportMapFragment" />
+        <ScrollView
+            android:id="@+id/location_form"
+            android:padding="10dp"
+            android:verticalScrollbarPosition="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ride_card_bg"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/point_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/point" />
+                    <Button
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@mipmap/plus_but"
+                        android:id="@+id/plus_but" />
+                    <LinearLayout
+                        android:layout_toRightOf="@id/point_img"
+                        android:layout_toLeftOf="@id/plus_but"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/material_grey_300"
+                            android:textSize="@dimen/abc_text_size_small_material"
+                            android:text="@string/pickup_location"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp" />
+                        <TextView
+                            android:id="@+id/result_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textColor="@color/material_grey_800"
+                            android:textSize="@dimen/abc_text_size_small_material"
+                            android:text="Historical Library and Museum" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+                    <ImageView
+                        android:id="@+id/marker_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/marker" />
+                    <Button
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@mipmap/remove_but"
+                        android:id="@+id/remove_but" />
+                    <LinearLayout
+                        android:layout_toRightOf="@id/marker_img"
+                        android:layout_toLeftOf="@id/remove_but"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/material_grey_300"
+                            android:textSize="@dimen/abc_text_size_small_material"
+                            android:text="@string/destination_location"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/material_grey_800"
+                            android:textSize="@dimen/abc_text_size_small_material"
+                            android:text="My Home" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/destination_but"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/destination_but"
+            android:layout_marginRight="10dp" />
+        <LinearLayout
+            android:id="@+id/time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/destination_but"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:background="@color/login_background">
+            <TextView
+                android:id="@+id/estimated_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:textColor="@color/material_grey_600"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:text="@string/estimated_pickup_time" />
+            <TextView
+                android:id="@+id/time_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/material_grey_600"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:text="4Mins" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/promo_layout"
+            android:layout_width="match_parent"
+            android:layout_below="@id/time_layout"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/fare_estimate_but"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@mipmap/fare_estimate_but" />
+            <Button
+                android:id="@+id/promo_code_but"
+                android:layout_toRightOf="@id/fare_estimate_but"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/promo_code_but" />
+            <TextView
+                android:id="@+id/cost_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="15dp"
+                android:translationZ="@dimen/abc_action_bar_overflow_padding_start_material"
+                android:textColor="@color/material_grey_800"
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:text="$45.99" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/request_ride_but"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/promo_layout"
+            android:background="@mipmap/request_ride_but" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Click Me!</string>
+    <string name="ApplicationName">MOB1TAXI</string>
+	<string name="email_address">Email Address</string>
+	<string name="password">Password</string>
+	<string name="confirm_password">Confirm Password</string>
+	<string name="forgot_password">Forgot Password?</string>
+
+	<string name="hint_enter_first_name">Enter first name</string>
+	<string name="hint_enter_last_name">Enter last name</string>
+	<string name="hint_enter_mobile_number">Enter mobile number</string>
+	<string name="hint_enter_email_address">Enter email address</string>
+	<string name="hint_enter_password">Enter password</string>
+	<string name="hint_reenter_your_password">Re-enter your password</string>
+	<string name="hint_search_address">Search address</string>
+	
+	<string name="first_name">First Name</string>
+	<string name="last_name">Last Name</string>
+	<string name="mobile_number">Mobile Number</string>
+	<string name="how_did_you_hear_about_us">How did you hear about us?</string>
+
+	<string name="book_ride">Book Ride</string>
+	<string name="estimated_pickup_time">Estimated Pickup Time:</string>
+	<string name="pickup_location">Pickup Location</string>
+	<string name="destination_location">Destination Location</string>
+	<string name="your_ride_is_here">Your Ride is Here</string>
+	<string name="time_arrived">Time Arrived -</string>
+
+	<string name="home">Home</string>
+	<string name="bookings">Bookings</string>
+	<string name="payments">Payments</string>
+	<string name="contact_us">Contact Us</string>
+	<string name="about_us">About Us</string>
+	<string name="privacy_policy">Privacy Policy</string>
+	<string name="logout">Log Out</string>
+
+	<string-array name="countrycode_array">
+		<item>+1</item>
+		<item>+44</item>
+		<item>+86</item>
+		<item>+380</item>
+		<item>+7</item>
+	</string-array>
+	<string-array name="how_did_you_hear_about_us_array">
+		<item>From a friend</item>
+		<item>From a blog</item>
+		<item>From a radio</item>
+	</string-array>
+</resources>
